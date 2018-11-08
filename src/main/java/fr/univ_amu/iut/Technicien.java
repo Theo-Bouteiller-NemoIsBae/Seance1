@@ -7,7 +7,7 @@ public class Technicien extends Employe {
     private int nbUnitesProduites;
     private double tauxCommissionUnite;
 
-    public Technicien(int numEmpl, String numSecu, String nom, String prenom, int echelon, LocalDate dateNaissance, LocalDate dateEmbauche, int tauxHorraire, int nbrHeure, int nbUnitesProduites, double tauxCommissionUnite) {
+    public Technicien(int numEmpl, String numSecu, String nom, String prenom, int echelon, LocalDate dateNaissance, LocalDate dateEmbauche, double tauxHorraire, double nbrHeure, int nbUnitesProduites, double tauxCommissionUnite) {
         super(numEmpl, numSecu, nom, prenom, echelon, dateNaissance, dateEmbauche, tauxHorraire, nbrHeure);
         this.nbUnitesProduites = nbUnitesProduites;
         this.tauxCommissionUnite = tauxCommissionUnite;

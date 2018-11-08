@@ -14,7 +14,7 @@ public class Employe {
     protected double nbrHeure;
 
 
-    public Employe(int numEmpl, String numSecu, String nom, String prenom, int echelon, LocalDate dateNaissance, LocalDate dateEmbauche, int tauxHorraire, int nbrHeure) {
+    public Employe(int numEmpl, String numSecu, String nom, String prenom, int echelon, LocalDate dateNaissance, LocalDate dateEmbauche, double tauxHorraire, double nbrHeure) {
         this.numEmpl = numEmpl;
         this.numSecu = numSecu;
         this.nom = nom;
@@ -35,11 +35,15 @@ public class Employe {
     }
 
     protected double getSalaireBrute(){
-        return this.tauxHorraire * this.nbrHeure;
+        return (this.tauxHorraire * this.nbrHeure) + 100;
     }
 
     private double getSalaireNet(){
         return getSalaireBrute() * 0.8;
+    }
+
+    protected double getNbrHeure(){
+        return nbrHeure;
     }
 
     @Override
