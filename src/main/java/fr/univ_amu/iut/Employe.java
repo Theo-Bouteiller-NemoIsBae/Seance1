@@ -2,7 +2,7 @@ package fr.univ_amu.iut;
 
 import java.time.LocalDate;
 
-public abstract class Employe {
+public class Employe {
     private int numEmpl;
     private String numSecu;
     private String nom;
@@ -24,6 +24,14 @@ public abstract class Employe {
         this.dateEmbauche = dateEmbauche;
         this.tauxHorraire = tauxHorraire;
         this.nbrHeure = nbrHeure;
+    }
+
+    protected int getEchelon() {
+        return echelon;
+    }
+
+    protected double getTauxHorraire() {
+        return tauxHorraire;
     }
 
     protected double getSalaireBrute(){

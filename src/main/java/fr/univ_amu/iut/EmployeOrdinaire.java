@@ -10,4 +10,8 @@ public class EmployeOrdinaire extends Employe {
     public void effectuerTacheOrdinaire(){
         System.out.println("effectuer tache ordinaire");
     }
+
+    private double getSalaireBrut(){
+        return super.getSalaireBrute() + (super.getEchelon() * 100);
+    }
 }
