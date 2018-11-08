@@ -34,12 +34,12 @@ public class Employe {
         return tauxHorraire;
     }
 
-    protected double getSalaireBrute(){
+    protected double getSalaireBrut(){
         return (this.tauxHorraire * this.nbrHeure) + 100;
     }
 
     private double getSalaireNet(){
-        return getSalaireBrute() * 0.8;
+        return getSalaireBrut() * 0.8;
     }
 
     protected double getNbrHeure(){
@@ -56,7 +56,7 @@ public class Employe {
                 ", echelon=" + echelon +
                 ", dateNaissance=" + dateNaissance +
                 ", dateEmbauche=" + dateEmbauche +
-                ", salaire brut =" + getSalaireBrute() +
+                ", salaire brut =" + getSalaireBrut() +
                 ", salaire net =" + getSalaireNet() +
                 '}' + "\n";
     }

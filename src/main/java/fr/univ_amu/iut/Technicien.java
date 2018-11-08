@@ -17,7 +17,7 @@ public class Technicien extends Employe {
         System.out.println("fabriquer produit");
     }
 
-    private double getSalaireBrut(){
-        return super.getSalaireBrute() + (nbUnitesProduites * tauxCommissionUnite);
+    protected double getSalaireBrut(){
+        return super.getSalaireBrut() + (nbUnitesProduites * tauxCommissionUnite);
     }
 }

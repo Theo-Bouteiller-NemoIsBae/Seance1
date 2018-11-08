@@ -11,8 +11,8 @@ public class EmployeOrdinaire extends Employe {
         System.out.println("effectuer tache ordinaire");
     }
 
-    private double getSalaireBrut(){
-        return super.getSalaireBrute() + (super.getEchelon() * 100);
+    protected double getSalaireBrut(){
+        return super.getSalaireBrut() + (super.getEchelon() * 100);
     }
 
 }
